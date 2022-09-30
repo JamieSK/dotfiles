@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Jamie Klein
+	email = jamie.klein@multiverse.io
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
