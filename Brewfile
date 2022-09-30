@@ -1,0 +1,32 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+brew "autoconf"
+brew "openssl@1.1"
+brew "awscli"
+brew "bat"
+brew "cmake"
+brew "docker", link: false
+brew "docker-compose", link: false
+brew "wxwidgets"
+brew "exercism"
+brew "fd"
+brew "fzf"
+brew "gcc"
+brew "gnupg"
+brew "imagemagick"
+brew "jq"
+brew "make"
+brew "minio", restart_service: true
+brew "minio-mc"
+brew "neovim"
+brew "postgresql@14", restart_service: true
+brew "rabbitmq", restart_service: true
+brew "ripgrep"
+brew "universal-ctags"
+brew "zoxide"
+cask "1password-cli"
+cask "notunes"
+cask "session-manager-plugin"
