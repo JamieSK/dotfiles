@@ -10,9 +10,12 @@ set smartindent
 set shiftwidth=2
 
 set number
+set relativenumber
 set numberwidth=4
+set signcolumn=no
 
 set scrolloff=8
+set mouse=
 
 set undofile
 
@@ -23,15 +26,12 @@ set splitbelow
 set splitright
 
 set background=dark
-colorscheme solarized-flat
 
 let mapleader="\<Space>"
 let g:coq_settings = { 'auto_start': 'shut-up' }
+let test#strategy = "neovim"
 lua require('plugins')
 
-nnoremap <leader>t <cmd>CHADopen<cr>
-nnoremap <leader>? <cmd>Cheatsheet<cr>
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>h :set hlsearch! hlsearch?<cr>
+nnoremap <leader>bc :%bd\|e#\|bd#<cr>
 
